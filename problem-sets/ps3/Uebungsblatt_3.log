@@ -1,0 +1,906 @@
+{"type":["init_ps"],"time":["2022-11-07 10:32:08"],"user":["Justin Maidhof"],"umph":[1667813528.7561],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:32:08"],"user":["Justin Maidhof"],"umph":[1667813528.8109],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(tidyverse)\nlibrary(pander)\nlibrary(sf)\nlibrary(gganimate)\nlibrary(ggrepel)\nlibrary(skimr)\nlibrary(RColorBrewer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:32:09"],"user":["Justin Maidhof"],"umph":[1667813529.1781],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[0],"code":[".PH_.__ <- read_csv(\".PH_.__\")\n\n# enter your code here ...\n"],"message":["evaluation error in \n  ____ <- read_csv(\"____\")\n  Error: '____' does not exist in current working directory ('/Users/JustinMaidhof2/Documents/GitHub/22-23/problem-sets/ps3').\n"]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:33:14"],"user":["Justin Maidhof"],"umph":[1667813594.4139],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:33:14"],"user":["Justin Maidhof"],"umph":[1667813594.4618],"ok":[false],"chunk":[2],"ex":[1],"e.ind":[0],"code":[".PH_.__ <- read_csv(\".PH_.__\")\n\n# enter your code here ...\n"],"message":["evaluation error in \n  ____ <- read_csv(\"____\")\n  Error: '____' does not exist in current working directory ('/Users/JustinMaidhof2/Documents/GitHub/22-23/problem-sets/ps3').\n"]}
+,
+{"type":["hint"],"time":["2022-11-07 10:40:01"],"user":["Justin Maidhof"],"umph":[1667814001.098],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:41:34"],"user":["Justin Maidhof"],"umph":[1667814094.2518],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:41:34"],"user":["Justin Maidhof"],"umph":[1667814094.5979],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["\n\n# enter your code here ...\neu_makro <- read_csv(\"data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:41:34"],"user":["Justin Maidhof"],"umph":[1667814094.6138],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:45:47"],"user":["Justin Maidhof"],"umph":[1667814347.787],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:45:48"],"user":["Justin Maidhof"],"umph":[1667814348.1003],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nuberblick <- skim(eu_makro)\nhead(uberblick)"],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:46:25"],"user":["Justin Maidhof"],"umph":[1667814385.5006],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:46:25"],"user":["Justin Maidhof"],"umph":[1667814385.8188],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nuberblick <- skim(eu_makro)\n\nhead(uberblick)"],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:46:46"],"user":["Justin Maidhof"],"umph":[1667814406.362],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:46:46"],"user":["Justin Maidhof"],"umph":[1667814406.9894],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:47:17"],"user":["Justin Maidhof"],"umph":[1667814437.6526],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:47:18"],"user":["Justin Maidhof"],"umph":[1667814438.1953],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 10:47:24"],"user":["Justin Maidhof"],"umph":[1667814444.5082],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:47:47"],"user":["Justin Maidhof"],"umph":[1667814467.9993],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:47:48"],"user":["Justin Maidhof"],"umph":[1667814468.5336],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:49:29"],"user":["Justin Maidhof"],"umph":[1667814569.5095],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:49:30"],"user":["Justin Maidhof"],"umph":[1667814570.0699],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 10:50:24"],"user":["Justin Maidhof"],"umph":[1667814624.8269],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:52:55"],"user":["Justin Maidhof"],"umph":[1667814775.0178],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:52:55"],"user":["Justin Maidhof"],"umph":[1667814775.5602],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:53:13"],"user":["Justin Maidhof"],"umph":[1667814793.8245],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:53:14"],"user":["Justin Maidhof"],"umph":[1667814794.2649],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 10:53:20"],"user":["Justin Maidhof"],"umph":[1667814800.1884],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:54:00"],"user":["Justin Maidhof"],"umph":[1667814840.5367],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:54:00"],"user":["Justin Maidhof"],"umph":[1667814840.8353],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nskim(eu_makro)"],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 10:54:06"],"user":["Justin Maidhof"],"umph":[1667814846.7869],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:55:15"],"user":["Justin Maidhof"],"umph":[1667814915.4082],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:55:15"],"user":["Justin Maidhof"],"umph":[1667814915.8932],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim(eu_makro) %>%\n  head(ueberblick)"],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 10:55:40"],"user":["Justin Maidhof"],"umph":[1667814940.4696],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 10:56:32"],"user":["Justin Maidhof"],"umph":[1667814992.9319],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:56:53"],"user":["Justin Maidhof"],"umph":[1667815013.5255],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:56:54"],"user":["Justin Maidhof"],"umph":[1667815014.009],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro  %>%\n  skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:57:28"],"user":["Justin Maidhof"],"umph":[1667815048.1903],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 10:57:28"],"user":["Justin Maidhof"],"umph":[1667815048.746],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro  %>%\n  skim() \nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 10:57:54"],"user":["Justin Maidhof"],"umph":[1667815074.4206],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 10:59:51"],"user":["Justin Maidhof"],"umph":[1667815191.7752],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:00:34"],"user":["Justin Maidhof"],"umph":[1667815234.6647],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:00:51"],"user":["Justin Maidhof"],"umph":[1667815251.7155],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:01:08"],"user":["Justin Maidhof"],"umph":[1667815268.8425],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:01:40"],"user":["Justin Maidhof"],"umph":[1667815300.1636],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:02:16"],"user":["Justin Maidhof"],"umph":[1667815336.098],"ok":[true]}
+,
+{"type":["hint"],"time":["2022-11-07 11:02:21"],"user":["Justin Maidhof"],"umph":[1667815341.9682],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:05:10"],"user":["Justin Maidhof"],"umph":[1667815510.4966],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:05:47"],"user":["Justin Maidhof"],"umph":[1667815547.828],"ok":[true]}
+,
+{"type":["hint"],"time":["2022-11-07 11:06:00"],"user":["Justin Maidhof"],"umph":[1667815560.4486],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:07:02"],"user":["Justin Maidhof"],"umph":[1667815622.5785],"ok":[true]}
+,
+{"type":["hint"],"time":["2022-11-07 11:07:54"],"user":["Justin Maidhof"],"umph":[1667815674.8293],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 11:08:37"],"user":["Justin Maidhof"],"umph":[1667815717.5096],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:10:21"],"user":["Justin Maidhof"],"umph":[1667815821.7542],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:10:45"],"user":["Justin Maidhof"],"umph":[1667815845.6495],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:11:03"],"user":["Justin Maidhof"],"umph":[1667815863.8776],"ok":[true]}
+,
+{"type":["hint"],"time":["2022-11-07 11:11:17"],"user":["Justin Maidhof"],"umph":[1667815877.946],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:20:23"],"user":["Justin Maidhof"],"umph":[1667816423.1007],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:20:59"],"user":["Justin Maidhof"],"umph":[1667816459.3538],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:22:49"],"user":["Justin Maidhof"],"umph":[1667816569.2116],"ok":[true]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:23:07"],"user":["Justin Maidhof"],"umph":[1667816587.2396],"ok":[true]}
+,
+{"type":["hint"],"time":["2022-11-07 11:23:15"],"user":["Justin Maidhof"],"umph":[1667816595.2556],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["init_ps"],"time":["2022-11-07 11:28:08"],"user":["Justin Maidhof"],"umph":[1667816888.7119],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:28:08"],"user":["Justin Maidhof"],"umph":[1667816888.7972],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(tidyverse)\nlibrary(pander)\nlibrary(sf)\nlibrary(gganimate)\nlibrary(ggrepel)\nlibrary(skimr)\nlibrary(RColorBrewer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:28:09"],"user":["Justin Maidhof"],"umph":[1667816889.557],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["\n\n# enter your code here ...\neu_makro <- read_csv(\"data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:28:10"],"user":["Justin Maidhof"],"umph":[1667816890.0795],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\n"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:28:49"],"user":["Justin Maidhof"],"umph":[1667816929.8566],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:28:50"],"user":["Justin Maidhof"],"umph":[1667816930.2455],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\n"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:28:57"],"user":["Justin Maidhof"],"umph":[1667816937.6341],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:29:50"],"user":["Justin Maidhof"],"umph":[1667816990.8439],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:29:51"],"user":["Justin Maidhof"],"umph":[1667816991.3613],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:30:41"],"user":["Justin Maidhof"],"umph":[1667817041.1037],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:30:41"],"user":["Justin Maidhof"],"umph":[1667817041.6678],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro) %>%\nhead()"],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:30:54"],"user":["Justin Maidhof"],"umph":[1667817054.622],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:30:55"],"user":["Justin Maidhof"],"umph":[1667817055.1293],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro) "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:32:32"],"user":["Justin Maidhof"],"umph":[1667817152.9086],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:32:46"],"user":["Justin Maidhof"],"umph":[1667817166.1695],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:32:46"],"user":["Justin Maidhof"],"umph":[1667817166.6091],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:34:24"],"user":["Justin Maidhof"],"umph":[1667817264.9201],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:34:25"],"user":["Justin Maidhof"],"umph":[1667817265.368],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:35:05"],"user":["Justin Maidhof"],"umph":[1667817305.031],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:35:05"],"user":["Justin Maidhof"],"umph":[1667817305.5948],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:35:15"],"user":["Justin Maidhof"],"umph":[1667817315.4489],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:35:32"],"user":["Justin Maidhof"],"umph":[1667817332.6751],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:35:32"],"user":["Justin Maidhof"],"umph":[1667817332.9206],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick <- eu_makro\nhead(ueberblick)"],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:35:36"],"user":["Justin Maidhof"],"umph":[1667817336.5816],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:35:58"],"user":["Justin Maidhof"],"umph":[1667817358.8508],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:35:59"],"user":["Justin Maidhof"],"umph":[1667817359.0883],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro\nhead(ueberblick)"],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:36:15"],"user":["Justin Maidhof"],"umph":[1667817375.7841],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:36:16"],"user":["Justin Maidhof"],"umph":[1667817376.2752],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:36:33"],"user":["Justin Maidhof"],"umph":[1667817393.8475],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:36:34"],"user":["Justin Maidhof"],"umph":[1667817394.4486],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:36:46"],"user":["Justin Maidhof"],"umph":[1667817406.1186],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["hint"],"time":["2022-11-07 11:37:25"],"user":["Justin Maidhof"],"umph":[1667817445.2991],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:39:23"],"user":["Justin Maidhof"],"umph":[1667817563.725],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:39:24"],"user":["Justin Maidhof"],"umph":[1667817564.3584],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:39:51"],"user":["Justin Maidhof"],"umph":[1667817591.6157],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:41:42"],"user":["Justin Maidhof"],"umph":[1667817702.7208],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:41:43"],"user":["Justin Maidhof"],"umph":[1667817703.1942],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:43:43"],"user":["Justin Maidhof"],"umph":[1667817823.5525],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:43:47"],"user":["Justin Maidhof"],"umph":[1667817827.6018],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:43:47"],"user":["Justin Maidhof"],"umph":[1667817827.8119],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro "],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:43:51"],"user":["Justin Maidhof"],"umph":[1667817831.2713],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:44:53"],"user":["Justin Maidhof"],"umph":[1667817893.299],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:44:53"],"user":["Justin Maidhof"],"umph":[1667817893.7662],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:44:57"],"user":["Justin Maidhof"],"umph":[1667817897.4263],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:45:52"],"user":["Justin Maidhof"],"umph":[1667817952.9465],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:45:53"],"user":["Justin Maidhof"],"umph":[1667817953.3891],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim(variable.names(eu_makro))"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim(variable.names(eu_makro))\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:46:09"],"user":["Justin Maidhof"],"umph":[1667817969.5059],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:48:10"],"user":["Justin Maidhof"],"umph":[1667818090.6537],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:48:10"],"user":["Justin Maidhof"],"umph":[1667818090.8275],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro\n  ueberblick <- skim(eu_makro)"],"message":["\nYou have assigned 2 times a value to the variable ueberblick in your chunk. While you might get the correct result in RStudio, RTutor can only check your result if you assign a value to ueberblick only once in your chunk."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:48:26"],"user":["Justin Maidhof"],"umph":[1667818106.195],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 11:48:37"],"user":["Justin Maidhof"],"umph":[1667818117.3431],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:49:10"],"user":["Justin Maidhof"],"umph":[1667818150.4196],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:49:10"],"user":["Justin Maidhof"],"umph":[1667818150.8547],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:53:33"],"user":["Justin Maidhof"],"umph":[1667818413.0643],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:53:33"],"user":["Justin Maidhof"],"umph":[1667818413.0935],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\n  ueberblick %>% skim()\n  head(ueberblick)"],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:53:41"],"user":["Justin Maidhof"],"umph":[1667818421.6812],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 11:53:59"],"user":["Justin Maidhof"],"umph":[1667818439.6882],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:54:03"],"user":["Justin Maidhof"],"umph":[1667818443.8643],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:54:03"],"user":["Justin Maidhof"],"umph":[1667818443.8991],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\n  ueberblick %>%\n  skim()\n  head(ueberblick)"],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:57:13"],"user":["Justin Maidhof"],"umph":[1667818633.5967],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:57:14"],"user":["Justin Maidhof"],"umph":[1667818634.0196],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:57:25"],"user":["Justin Maidhof"],"umph":[1667818645.3595],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:58:15"],"user":["Justin Maidhof"],"umph":[1667818695.0341],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:58:15"],"user":["Justin Maidhof"],"umph":[1667818695.5286],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:58:47"],"user":["Justin Maidhof"],"umph":[1667818727.9344],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:58:48"],"user":["Justin Maidhof"],"umph":[1667818728.4183],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 11:59:13"],"user":["Justin Maidhof"],"umph":[1667818753.2301],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 11:59:13"],"user":["Justin Maidhof"],"umph":[1667818753.4255],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro\n  "],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 11:59:16"],"user":["Justin Maidhof"],"umph":[1667818756.7622],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:00:01"],"user":["Justin Maidhof"],"umph":[1667818801.426],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:00:01"],"user":["Justin Maidhof"],"umph":[1667818801.8379],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:00:27"],"user":["Justin Maidhof"],"umph":[1667818827.4523],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:00:27"],"user":["Justin Maidhof"],"umph":[1667818827.9519],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:00:52"],"user":["Justin Maidhof"],"umph":[1667818852.2956],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:00:52"],"user":["Justin Maidhof"],"umph":[1667818852.3185],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\neu_makro = ueberblick %>%\n  skim()\n  "],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:00:58"],"user":["Justin Maidhof"],"umph":[1667818858.0484],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:01:19"],"user":["Justin Maidhof"],"umph":[1667818879.151],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:01:19"],"user":["Justin Maidhof"],"umph":[1667818879.1804],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\neu_makro = ueberblick %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:02:03"],"user":["Justin Maidhof"],"umph":[1667818923.5313],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:02:03"],"user":["Justin Maidhof"],"umph":[1667818923.8296],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim_format()\n  "],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:02:18"],"user":["Justin Maidhof"],"umph":[1667818938.1135],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:02:18"],"user":["Justin Maidhof"],"umph":[1667818938.4605],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim_format(ueberblick)\n  "],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:02:50"],"user":["Justin Maidhof"],"umph":[1667818970.0602],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:02:50"],"user":["Justin Maidhof"],"umph":[1667818970.4974],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:02:56"],"user":["Justin Maidhof"],"umph":[1667818976.1862],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:04:37"],"user":["Justin Maidhof"],"umph":[1667819077.5051],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:04:37"],"user":["Justin Maidhof"],"umph":[1667819077.9209],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:05:24"],"user":["Justin Maidhof"],"umph":[1667819124.0647],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:05:24"],"user":["Justin Maidhof"],"umph":[1667819124.5573],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:05:39"],"user":["Justin Maidhof"],"umph":[1667819139.7671],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["hint"],"time":["2022-11-07 12:05:42"],"user":["Justin Maidhof"],"umph":[1667819142.5067],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["hint"],"time":["2022-11-07 12:05:44"],"user":["Justin Maidhof"],"umph":[1667819144.3528],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:05:54"],"user":["Justin Maidhof"],"umph":[1667819154.369],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:05:54"],"user":["Justin Maidhof"],"umph":[1667819154.8671],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:05:58"],"user":["Justin Maidhof"],"umph":[1667819158.9177],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:06:21"],"user":["Justin Maidhof"],"umph":[1667819181.0763],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:06:21"],"user":["Justin Maidhof"],"umph":[1667819181.582],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:10:04"],"user":["Justin Maidhof"],"umph":[1667819404.8928],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["hint"],"time":["2022-11-07 12:10:14"],"user":["Justin Maidhof"],"umph":[1667819414.7697],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:10:50"],"user":["Justin Maidhof"],"umph":[1667819450.6653],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:10:50"],"user":["Justin Maidhof"],"umph":[1667819450.6838],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\neu_makro = ueberblick %>%\n  skim()\n  "],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:10:54"],"user":["Justin Maidhof"],"umph":[1667819454.4896],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:11:33"],"user":["Justin Maidhof"],"umph":[1667819493.336],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:11:33"],"user":["Justin Maidhof"],"umph":[1667819493.3579],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\neu_makro = ueberblick %>%\n  skim()\nhead(ueberblick)\n  "],"message":["\nYou have not yet made an assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:14:03"],"user":["Justin Maidhof"],"umph":[1667819643.4507],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:14:03"],"user":["Justin Maidhof"],"umph":[1667819643.8764],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:17:29"],"user":["Justin Maidhof"],"umph":[1667819849.7313],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:17:30"],"user":["Justin Maidhof"],"umph":[1667819850.0308],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick <- ueberblick %>%\n  skim()\n  "],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:17:48"],"user":["Justin Maidhof"],"umph":[1667819868.5131],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:17:48"],"user":["Justin Maidhof"],"umph":[1667819868.9256],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- eu_makro %>%\n  skim()\n  "],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:19:54"],"user":["Justin Maidhof"],"umph":[1667819994.779],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["hint"],"time":["2022-11-07 12:23:14"],"user":["Justin Maidhof"],"umph":[1667820194.1696],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:23:17"],"user":["Justin Maidhof"],"umph":[1667820197.3808],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:23:17"],"user":["Justin Maidhof"],"umph":[1667820197.7763],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:23:56"],"user":["Justin Maidhof"],"umph":[1667820236.3317],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:23:56"],"user":["Justin Maidhof"],"umph":[1667820236.6411],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = ueberblick %>%\n  skim()"],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:24:15"],"user":["Justin Maidhof"],"umph":[1667820255.9461],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:24:16"],"user":["Justin Maidhof"],"umph":[1667820256.3741],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:25:50"],"user":["Justin Maidhof"],"umph":[1667820350.5993],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["hint"],"time":["2022-11-07 12:26:17"],"user":["Justin Maidhof"],"umph":[1667820377.7864],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:27:08"],"user":["Justin Maidhof"],"umph":[1667820428.3927],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:27:08"],"user":["Justin Maidhof"],"umph":[1667820428.7306],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[1],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim(ueberblick)"],"message":["\nYou have not made a correct assignment to ueberblick in chunk 1___Deskriptive_Anal_b."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:27:30"],"user":["Justin Maidhof"],"umph":[1667820450.6011],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:27:31"],"user":["Justin Maidhof"],"umph":[1667820451.0487],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:30:58"],"user":["Justin Maidhof"],"umph":[1667820658.6139],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:30:59"],"user":["Justin Maidhof"],"umph":[1667820659.1936],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick = eu_makro %>%\n  skim()\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick = eu_makro %>% skim()\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:31:05"],"user":["Justin Maidhof"],"umph":[1667820665.1726],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["hint"],"time":["2022-11-07 12:33:17"],"user":["Justin Maidhof"],"umph":[1667820797.613],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[2]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:34:31"],"user":["Justin Maidhof"],"umph":[1667820871.1198],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:34:31"],"user":["Justin Maidhof"],"umph":[1667820871.5175],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:34:52"],"user":["Justin Maidhof"],"umph":[1667820892.223],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:34:52"],"user":["Justin Maidhof"],"umph":[1667820892.7119],"ok":[false],"chunk":[3],"ex":[1],"e.ind":[2],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nhead(ueberblick)"],"message":["\nOk, in chunk 1___Deskriptive_Anal_b your command\n\n    ueberblick <- skim(eu_makro)\n\nindeed yields the correct result. But you shall solve this task instead by using the function 'ueberblick'."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:35:08"],"user":["Justin Maidhof"],"umph":[1667820908.2205],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:35:08"],"user":["Justin Maidhof"],"umph":[1667820908.6209],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nueberblick"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:35:08"],"user":["Justin Maidhof"],"umph":[1667820908.7155],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["panderOptions('knitr.auto.asis', FALSE)\nueberblick %>% pander(style=\"rmarkdown\") "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:35:08"],"user":["Justin Maidhof"],"umph":[1667820908.725],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:35:08"],"user":["Justin Maidhof"],"umph":[1667820908.7329],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1___Deskriptive_Anal_c_3."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:35:38"],"user":["Justin Maidhof"],"umph":[1667820938.2597],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:35:38"],"user":["Justin Maidhof"],"umph":[1667820938.2802],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[1],"code":["#deskriptives <- eu_makro %>%\n#  group_by(___) %>%\n#  summarize(Mittel = round(___(debt_share_country, na.rm=TRUE),2),\n#            SD = round(___(debt_share_country, na.rm=TRUE),2),\n#            Min = round(___(debt_share_country, na.rm=TRUE),2),\n#            Median = round(___(debt_share_country, na.rm=TRUE),2),\n#            Max = round(___(debt_share_country, na.rm=TRUE),2)) %>%\n#  arrange(___(___))\n\n#deskriptives\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to deskriptives in chunk 1___Deskriptive_Anal_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:35:59"],"user":["Justin Maidhof"],"umph":[1667820959.971],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:35:59"],"user":["Justin Maidhof"],"umph":[1667820959.9986],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[1],"code":["#deskriptives <- eu_makro %>%\n#  group_by(___) %>%\n#  summarize(Mittel = round(___(debt_share_country, na.rm=TRUE),2),\n#            SD = round(___(debt_share_country, na.rm=TRUE),2),\n#            Min = round(___(debt_share_country, na.rm=TRUE),2),\n#            Median = round(___(debt_share_country, na.rm=TRUE),2),\n#            Max = round(___(debt_share_country, na.rm=TRUE),2)) %>%\n#  arrange(___(___))\n\n#deskriptives\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to deskriptives in chunk 1___Deskriptive_Anal_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:36:46"],"user":["Justin Maidhof"],"umph":[1667821006.185],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:36:46"],"user":["Justin Maidhof"],"umph":[1667821006.2442],"ok":[false],"chunk":[5],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n3"],"message":["\nYou have not yet entered all correct commands in chunk 1___Deskriptive_Anal_c_2."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:36:56"],"user":["Justin Maidhof"],"umph":[1667821016.5851],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:36:56"],"user":["Justin Maidhof"],"umph":[1667821016.6216],"ok":[false],"chunk":[5],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 1___Deskriptive_Anal_c_2."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:37:01"],"user":["Justin Maidhof"],"umph":[1667821021.8497],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:37:11"],"user":["Justin Maidhof"],"umph":[1667821031.4037],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:37:11"],"user":["Justin Maidhof"],"umph":[1667821031.4198],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:37:11"],"user":["Justin Maidhof"],"umph":[1667821031.4309],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 1___Deskriptive_Anal_c_3."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:38:37"],"user":["Justin Maidhof"],"umph":[1667821117.8664],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:38:37"],"user":["Justin Maidhof"],"umph":[1667821117.8957],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[1],"code":["#deskriptives <- eu_makro %>%\n#  group_by(___) %>%\n#  summarize(Mittel = round(___(debt_share_country, na.rm=TRUE),2),\n#            SD = round(___(debt_share_country, na.rm=TRUE),2),\n#            Min = round(___(debt_share_country, na.rm=TRUE),2),\n#            Median = round(___(debt_share_country, na.rm=TRUE),2),\n#            Max = round(___(debt_share_country, na.rm=TRUE),2)) %>%\n#  arrange(___(___))\n\n#deskriptives\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to deskriptives in chunk 1___Deskriptive_Anal_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:39:20"],"user":["Justin Maidhof"],"umph":[1667821160.8862],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:39:20"],"user":["Justin Maidhof"],"umph":[1667821160.9134],"ok":[false],"chunk":[6],"ex":[1],"e.ind":[1],"code":["\n# enter your code here ...\n1"],"message":["\nYou have not yet entered all correct commands in chunk 1___Deskriptive_Anal_c_3."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:39:26"],"user":["Justin Maidhof"],"umph":[1667821166.3932],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:39:26"],"user":["Justin Maidhof"],"umph":[1667821166.4153],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:39:26"],"user":["Justin Maidhof"],"umph":[1667821166.4277],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[1],"code":["#deskriptives <- eu_makro %>%\n#  group_by(___) %>%\n#  summarize(Mittel = round(___(debt_share_country, na.rm=TRUE),2),\n#            SD = round(___(debt_share_country, na.rm=TRUE),2),\n#            Min = round(___(debt_share_country, na.rm=TRUE),2),\n#            Median = round(___(debt_share_country, na.rm=TRUE),2),\n#            Max = round(___(debt_share_country, na.rm=TRUE),2)) %>%\n#  arrange(___(___))\n\n#deskriptives\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to deskriptives in chunk 1___Deskriptive_Anal_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:39:32"],"user":["Justin Maidhof"],"umph":[1667821172.6021],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:39:32"],"user":["Justin Maidhof"],"umph":[1667821172.6384],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[1],"code":["#deskriptives <- eu_makro %>%\n#  group_by(___) %>%\n#  summarize(Mittel = round(___(debt_share_country, na.rm=TRUE),2),\n#            SD = round(___(debt_share_country, na.rm=TRUE),2),\n#            Min = round(___(debt_share_country, na.rm=TRUE),2),\n#            Median = round(___(debt_share_country, na.rm=TRUE),2),\n#            Max = round(___(debt_share_country, na.rm=TRUE),2)) %>%\n#  arrange(___(___))\n\n#deskriptives\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to deskriptives in chunk 1___Deskriptive_Anal_d."]}
+,
+{"type":["hint"],"time":["2022-11-07 12:51:22"],"user":["Justin Maidhof"],"umph":[1667821882.5834],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:53:03"],"user":["Justin Maidhof"],"umph":[1667821983.3393],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:53:03"],"user":["Justin Maidhof"],"umph":[1667821983.6581],"ok":[false],"chunk":[7],"ex":[1],"e.ind":[1],"code":["\n\n# enter your code here ...\ndeskriptives <- eu_makro %>%\n  group_by(country) %>%\n  summarize(Mittel = round(mean(debt_share_country, na.rm=TRUE),2), SD = round(sd(debt_share_country, na.rm=TRUE),2), Min = round(min(debt_share_country, na.rm=TRUE),2), Median = round(median(debt_share_country, na.rm=TRUE),2), Max = round(max(debt_share_country, na.rm=TRUE),2) %>%\n              arrange(desc(Median)))\ndeskriptives"],"message":["\nYou have not made a correct assignment to deskriptives in chunk 1___Deskriptive_Anal_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 12:54:26"],"user":["Justin Maidhof"],"umph":[1667822066.483],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:54:26"],"user":["Justin Maidhof"],"umph":[1667822066.6089],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["\n\n# enter your code here ...\ndeskriptives <- eu_makro %>%\n  group_by(country) %>%\n  summarize(Mittel = round(mean(debt_share_country, na.rm=TRUE),2), SD = round(sd(debt_share_country, na.rm=TRUE),2), Min = round(min(debt_share_country, na.rm=TRUE),2), Median = round(median(debt_share_country, na.rm=TRUE),2), Max = round(max(debt_share_country, na.rm=TRUE),2)) %>%\n        arrange(desc(Median))\ndeskriptives"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:54:26"],"user":["Justin Maidhof"],"umph":[1667822066.6901],"ok":[true],"chunk":[8],"ex":[2],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 12:54:26"],"user":["Justin Maidhof"],"umph":[1667822066.7026],"ok":[false],"chunk":[9],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to deutschland in chunk 2_a."]}
+,
+{"type":["hint"],"time":["2022-11-07 13:13:41"],"user":["Justin Maidhof"],"umph":[1667823221.4089],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 13:14:07"],"user":["Justin Maidhof"],"umph":[1667823247.7277],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 13:16:17"],"user":["Justin Maidhof"],"umph":[1667823377.8502],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 13:18:06"],"user":["Justin Maidhof"],"umph":[1667823486.1047],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:19:00"],"user":["Justin Maidhof"],"umph":[1667823540.6524],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:19:00"],"user":["Justin Maidhof"],"umph":[1667823540.8366],"ok":[false],"chunk":[9],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ndeutschland <- eu_makro %>%\n  filter(country == Germany)"],"message":["evaluation error in \n  deutschland <- eu_makro %>% filter(country == Germany)\n  \u001b[1m\u001b[33mError\u001b[39m in `filter()`:\u001b[22m\n\u001b[38;5;232m\u001b[33m!\u001b[38;5;232m Problem while computing `..1 = country == Germany`.\u001b[39m\n\u001b[1mCaused by error in `mask$eval_all_filter()`:\u001b[22m\n\u001b[33m!\u001b[39m Objekt 'Germany' nicht gefunden\n"]}
+,
+{"type":["hint"],"time":["2022-11-07 13:19:05"],"user":["Justin Maidhof"],"umph":[1667823545.4112],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:19:35"],"user":["Justin Maidhof"],"umph":[1667823575.7275],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:19:35"],"user":["Justin Maidhof"],"umph":[1667823575.7623],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ndeutschland <- eu_makro %>%\n  filter(country == \"Germany\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:19:35"],"user":["Justin Maidhof"],"umph":[1667823575.773],"ok":[false],"chunk":[10],"ex":[2],"e.ind":[1],"code":["#g1 <- ___ %>%\n#  ggplot() + geom_point(___(x = ___, y = ___))\n\n#g1\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to g1 in chunk 2_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 13:22:54"],"user":["Justin Maidhof"],"umph":[1667823774.9935],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:26:01"],"user":["Justin Maidhof"],"umph":[1667823961.904],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:26:02"],"user":["Justin Maidhof"],"umph":[1667823962.1738],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["#g1 <- ___ %>%\n#  ggplot() + geom_point(___(x = ___, y = ___))\n\n#g1\n\n# enter your code here ...\ng1 <- deutschland %>%\n  ggplot() + geom_point(aes(x = year, y = gdp))\n\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:26:02"],"user":["Justin Maidhof"],"umph":[1667823962.1814],"ok":[false],"chunk":[11],"ex":[2],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to g2 in chunk 2_c."]}
+,
+{"type":["hint"],"time":["2022-11-07 13:30:19"],"user":["Justin Maidhof"],"umph":[1667824219.6496],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:31:45"],"user":["Justin Maidhof"],"umph":[1667824305.9362],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:31:46"],"user":["Justin Maidhof"],"umph":[1667824306.3134],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ng2 = g1 + geom_line(aes(x = year, y = gov_debt))\n\ng2\n\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:31:46"],"user":["Justin Maidhof"],"umph":[1667824306.3217],"ok":[false],"chunk":[12],"ex":[2],"e.ind":[1],"code":["# g3 <- ____ %>%\n#   ggplot() + \n#   geom_line(aes(x = ____, y = ____, group=____, colour=____))\n#\n#g3\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to g3 in chunk 2_d."]}
+,
+{"type":["hint"],"time":["2022-11-07 13:34:52"],"user":["Justin Maidhof"],"umph":[1667824492.6249],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:40:15"],"user":["Justin Maidhof"],"umph":[1667824815.9407],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:40:16"],"user":["Justin Maidhof"],"umph":[1667824816.9103],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["# g3 <- ____ %>%\n#   ggplot() + \n#   geom_line(aes(x = ____, y = ____, group=____, colour=____))\n#\n#g3\n\n# enter your code here ...\ng3 <- eu_makro %>%\n  ggplot() +\n  geom_line(aes(x = year, y = debt_share_country, group=country, colour=country))\n\ng3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:40:16"],"user":["Justin Maidhof"],"umph":[1667824816.9176],"ok":[false],"chunk":[13],"ex":[2],"e.ind":[1],"code":["#eu_analyse <- eu_makro %>%\n#  filter(___) %>%\n#  mutate( Laender = case_when(\n#    country == \"___\" ~ \"Deutschland\",\n#    country == \"___\" ~ \"Italien\",\n#    TRUE ~ \"___\"))\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_analyse in chunk 2_e."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:44:09"],"user":["Justin Maidhof"],"umph":[1667825049.4477],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:44:09"],"user":["Justin Maidhof"],"umph":[1667825049.4943],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["#eu_analyse <- eu_makro %>%\n#  filter(___) %>%\n#  mutate( Laender = case_when(\n#    country == \"___\" ~ \"Deutschland\",\n#    country == \"___\" ~ \"Italien\",\n#    TRUE ~ \"___\"))\n\n# enter your code here ...\neu_analyse <- eu_makro %>%\n  filter(year >= 1995) %>%\n  mutate(Laender = case_when(\n    country == \"Germany\" ~ \"Deutschland\",\n    country == \"Italy\" ~ \"Italien\",\n    TRUE ~ \"Andere\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:44:09"],"user":["Justin Maidhof"],"umph":[1667825049.5025],"ok":[false],"chunk":[14],"ex":[2],"e.ind":[1],"code":["#g4 <- eu_analyse %>%\n#  ggplot() + \n#  geom_line(aes(x = year, y = debt_share_country, group = ___, colour = ___))\n\n#g4\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to g4 in chunk 2_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:45:50"],"user":["Justin Maidhof"],"umph":[1667825150.2273],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:45:50"],"user":["Justin Maidhof"],"umph":[1667825150.6256],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["#g4 <- eu_analyse %>%\n#  ggplot() + \n#  geom_line(aes(x = year, y = debt_share_country, group = ___, colour = ___))\n\n#g4\n\n# enter your code here ...\ng4 <- eu_analyse %>%\n  ggplot() +\n  geom_line(aes(x = year, y = debt_share_country, group = country, colour = Laender))\n\ng4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:45:50"],"user":["Justin Maidhof"],"umph":[1667825150.6334],"ok":[false],"chunk":[15],"ex":[2],"e.ind":[1],"code":["#g5 <- g4 + \n#  ylab(\"___\") + \n#  xlab(\"___\") +\n#  scale_colour_manual(name = \"___\", \n#                      values = c(\"___\", \"___\", \"___\"))\n#\n#g5\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to g5 in chunk 2_g."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:50:18"],"user":["Justin Maidhof"],"umph":[1667825418.0579],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:50:18"],"user":["Justin Maidhof"],"umph":[1667825418.471],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["#g5 <- g4 + \n#  ylab(\"___\") + \n#  xlab(\"___\") +\n#  scale_colour_manual(name = \"___\", \n#                      values = c(\"___\", \"___\", \"___\"))\n#\n#g5\n\n# enter your code here ...\ng5 <- g4 +\n  ylab(\"Schuldenquote\") +\n  xlab(\"Jahr\") +\n  scale_colour_manual(name = \"Laender\",\n                      values = c(\"grey\", \"springgreen4\", \"blue\"))\n\ng5"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:50:18"],"user":["Justin Maidhof"],"umph":[1667825418.4774],"ok":[false],"chunk":[16],"ex":[2],"e.ind":[1],"code":["#final <- g5 +\n#  ___(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") +\n#  ___(___=0.60, ___ = \"red\")\n\n#final\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to final in chunk 2_h."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:50:28"],"user":["Justin Maidhof"],"umph":[1667825428.0568],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:50:28"],"user":["Justin Maidhof"],"umph":[1667825428.0873],"ok":[false],"chunk":[16],"ex":[2],"e.ind":[1],"code":["#final <- g5 +\n#  ___(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") +\n#  ___(___=0.60, ___ = \"red\")\n\n#final\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to final in chunk 2_h."]}
+,
+{"type":["hint"],"time":["2022-11-07 13:51:57"],"user":["Justin Maidhof"],"umph":[1667825517.1352],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:55:06"],"user":["Justin Maidhof"],"umph":[1667825706.0436],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:55:06"],"user":["Justin Maidhof"],"umph":[1667825706.432],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["#final <- g5 +\n#  ___(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") +\n#  ___(___=0.60, ___ = \"red\")\n\n#final\n\n# enter your code here ...\nfinal <- g5 +\n  ggtitle(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") + \n  geom_hline(yintercept = 0.6, color = \"red\")\n\nfinal"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:55:07"],"user":["Justin Maidhof"],"umph":[1667825707.533],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["final +\n  theme_bw() +\n  guides(color = FALSE) +\n  geom_text_repel(aes(x = year, y = debt_share_country, label = Laender),\n                  data          = filter(eu_analyse %>% filter(Laender!=\"Andere\", year==last(year))),\n                  size          = 4,\n                  box.padding   = 1.5,\n                  point.padding = 0.5,\n                  force         = 100,\n                  segment.size  = 0.2,\n                  segment.color = \"grey50\",\n                  direction     = \"x\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:55:08"],"user":["Justin Maidhof"],"umph":[1667825708.0672],"ok":[true],"chunk":[18],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")\neu_analyse <- eu_makro %>%\n  filter(year>=1995) %>%\n  mutate( Laender = case_when(\n    country == \"Germany\" ~ \"Deutschland\",\n    country == \"Italy\" ~ \"Italien\",\n    TRUE ~ \"Andere\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:55:08"],"user":["Justin Maidhof"],"umph":[1667825708.0742],"ok":[false],"chunk":[19],"ex":[3],"e.ind":[1],"code":["#eu_2005 <- eu_makro %>% \n#  filter(___) %>%\n#  ggplot(aes(___)) + \n#  ___\n\n#eu_2005\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_2005 in chunk 3_a."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 13:55:48"],"user":["Justin Maidhof"],"umph":[1667825748.0932],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 13:55:48"],"user":["Justin Maidhof"],"umph":[1667825748.1202],"ok":[false],"chunk":[19],"ex":[3],"e.ind":[1],"code":["#eu_2005 <- eu_makro %>% \n#  filter(___) %>%\n#  ggplot(aes(___)) + \n#  ___\n\n#eu_2005\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_2005 in chunk 3_a."]}
+,
+{"type":["init_ps"],"time":["2022-11-07 14:37:55"],"user":["Justin Maidhof"],"umph":[1667828275.7901],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:55"],"user":["Justin Maidhof"],"umph":[1667828275.8479],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(tidyverse)\nlibrary(pander)\nlibrary(sf)\nlibrary(gganimate)\nlibrary(ggrepel)\nlibrary(skimr)\nlibrary(RColorBrewer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:56"],"user":["Justin Maidhof"],"umph":[1667828276.4975],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["\n\n# enter your code here ...\neu_makro <- read_csv(\"data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:56"],"user":["Justin Maidhof"],"umph":[1667828276.9523],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nueberblick"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:57"],"user":["Justin Maidhof"],"umph":[1667828277.0816],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["panderOptions('knitr.auto.asis', FALSE)\nueberblick %>% pander(style=\"rmarkdown\") "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:57"],"user":["Justin Maidhof"],"umph":[1667828277.0884],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:57"],"user":["Justin Maidhof"],"umph":[1667828277.095],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:57"],"user":["Justin Maidhof"],"umph":[1667828277.1407],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["\n\n# enter your code here ...\ndeskriptives <- eu_makro %>%\n  group_by(country) %>%\n  summarize(Mittel = round(mean(debt_share_country, na.rm=TRUE),2), SD = round(sd(debt_share_country, na.rm=TRUE),2), Min = round(min(debt_share_country, na.rm=TRUE),2), Median = round(median(debt_share_country, na.rm=TRUE),2), Max = round(max(debt_share_country, na.rm=TRUE),2)) %>%\n        arrange(desc(Median))\ndeskriptives"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:57"],"user":["Justin Maidhof"],"umph":[1667828277.2501],"ok":[true],"chunk":[8],"ex":[2],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:57"],"user":["Justin Maidhof"],"umph":[1667828277.3217],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ndeutschland <- eu_makro %>%\n  filter(country == \"Germany\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:58"],"user":["Justin Maidhof"],"umph":[1667828278.528],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["#g1 <- ___ %>%\n#  ggplot() + geom_point(___(x = ___, y = ___))\n\n#g1\n\n# enter your code here ...\ng1 <- deutschland %>%\n  ggplot() + geom_point(aes(x = year, y = gdp))\n\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:58"],"user":["Justin Maidhof"],"umph":[1667828278.7754],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ng2 = g1 + geom_line(aes(x = year, y = gov_debt))\n\ng2\n\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:59"],"user":["Justin Maidhof"],"umph":[1667828279.7027],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["# g3 <- ____ %>%\n#   ggplot() + \n#   geom_line(aes(x = ____, y = ____, group=____, colour=____))\n#\n#g3\n\n# enter your code here ...\ng3 <- eu_makro %>%\n  ggplot() +\n  geom_line(aes(x = year, y = debt_share_country, group=country, colour=country))\n\ng3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:37:59"],"user":["Justin Maidhof"],"umph":[1667828279.7455],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["#eu_analyse <- eu_makro %>%\n#  filter(___) %>%\n#  mutate( Laender = case_when(\n#    country == \"___\" ~ \"Deutschland\",\n#    country == \"___\" ~ \"Italien\",\n#    TRUE ~ \"___\"))\n\n# enter your code here ...\neu_analyse <- eu_makro %>%\n  filter(year >= 1995) %>%\n  mutate(Laender = case_when(\n    country == \"Germany\" ~ \"Deutschland\",\n    country == \"Italy\" ~ \"Italien\",\n    TRUE ~ \"Andere\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:38:00"],"user":["Justin Maidhof"],"umph":[1667828280.0695],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["#g4 <- eu_analyse %>%\n#  ggplot() + \n#  geom_line(aes(x = year, y = debt_share_country, group = ___, colour = ___))\n\n#g4\n\n# enter your code here ...\ng4 <- eu_analyse %>%\n  ggplot() +\n  geom_line(aes(x = year, y = debt_share_country, group = country, colour = Laender))\n\ng4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:38:00"],"user":["Justin Maidhof"],"umph":[1667828280.3669],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["#g5 <- g4 + \n#  ylab(\"___\") + \n#  xlab(\"___\") +\n#  scale_colour_manual(name = \"___\", \n#                      values = c(\"___\", \"___\", \"___\"))\n#\n#g5\n\n# enter your code here ...\ng5 <- g4 +\n  ylab(\"Schuldenquote\") +\n  xlab(\"Jahr\") +\n  scale_colour_manual(name = \"Laender\",\n                      values = c(\"grey\", \"springgreen4\", \"blue\"))\n\ng5"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:38:00"],"user":["Justin Maidhof"],"umph":[1667828280.7096],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["#final <- g5 +\n#  ___(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") +\n#  ___(___=0.60, ___ = \"red\")\n\n#final\n\n# enter your code here ...\nfinal <- g5 +\n  ggtitle(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") + \n  geom_hline(yintercept = 0.6, color = \"red\")\n\nfinal"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:38:01"],"user":["Justin Maidhof"],"umph":[1667828281.0479],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["final +\n  theme_bw() +\n  guides(color = FALSE) +\n  geom_text_repel(aes(x = year, y = debt_share_country, label = Laender),\n                  data          = filter(eu_analyse %>% filter(Laender!=\"Andere\", year==last(year))),\n                  size          = 4,\n                  box.padding   = 1.5,\n                  point.padding = 0.5,\n                  force         = 100,\n                  segment.size  = 0.2,\n                  segment.color = \"grey50\",\n                  direction     = \"x\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:38:01"],"user":["Justin Maidhof"],"umph":[1667828281.1632],"ok":[true],"chunk":[18],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")\neu_analyse <- eu_makro %>%\n  filter(year>=1995) %>%\n  mutate( Laender = case_when(\n    country == \"Germany\" ~ \"Deutschland\",\n    country == \"Italy\" ~ \"Italien\",\n    TRUE ~ \"Andere\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:38:01"],"user":["Justin Maidhof"],"umph":[1667828281.169],"ok":[false],"chunk":[19],"ex":[3],"e.ind":[1],"code":["#eu_2005 <- eu_makro %>% \n#  filter(___) %>%\n#  ggplot(aes(___)) + \n#  ___\n\n#eu_2005\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_2005 in chunk 3_a."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 14:38:32"],"user":["Justin Maidhof"],"umph":[1667828312.9389],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:38:32"],"user":["Justin Maidhof"],"umph":[1667828312.9764],"ok":[false],"chunk":[19],"ex":[3],"e.ind":[1],"code":["#eu_2005 <- eu_makro %>% \n#  filter(___) %>%\n#  ggplot(aes(___)) + \n#  ___\n\n#eu_2005\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_2005 in chunk 3_a."]}
+,
+{"type":["hint"],"time":["2022-11-07 14:47:49"],"user":["Justin Maidhof"],"umph":[1667828869.7431],"ok":[true],"chunk":[19],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 14:48:41"],"user":["Justin Maidhof"],"umph":[1667828921.0266],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:48:41"],"user":["Justin Maidhof"],"umph":[1667828921.3987],"ok":[true],"chunk":[19],"ex":[3],"e.ind":[0],"code":["#eu_2005 <- eu_makro %>% \n#  filter(___) %>%\n#  ggplot(aes(___)) + \n#  ___\n\n#eu_2005\n\n# enter your code here ...\neu_2005 <- eu_makro %>%\n  filter(year == 2005) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram()\n\neu_2005"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:48:41"],"user":["Justin Maidhof"],"umph":[1667828921.4054],"ok":[false],"chunk":[20],"ex":[3],"e.ind":[1],"code":["#eu_2005f <- ___ %>%\n#  filter(___) %>%\n#  ggplot(aes(___)) +\n#  geom_histogram(___) + \n#  ylab(___) +\n#  xlab(___) +\n#  ___(___ = 0.6, color=\"___\", linetype=\"___\")\n#\n#eu_2005f\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_2005f in chunk 3_b."]}
+,
+{"type":["hint"],"time":["2022-11-07 14:51:57"],"user":["Justin Maidhof"],"umph":[1667829117.953],"ok":[true],"chunk":[20],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 14:57:19"],"user":["Justin Maidhof"],"umph":[1667829439.9805],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:57:20"],"user":["Justin Maidhof"],"umph":[1667829440.2753],"ok":[true],"chunk":[20],"ex":[3],"e.ind":[0],"code":["#eu_2005f <- ___ %>%\n#  filter(___) %>%\n#  ggplot(aes(___)) +\n#  geom_histogram(___) + \n#  ylab(___) +\n#  xlab(___) +\n#  ___(___ = 0.6, color=\"___\", linetype=\"___\")\n#\n#eu_2005f\n\n# enter your code here ...\neu_2005f <- eu_makro %>%\n  filter(year == 2005) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  ylab(\"Anzahl\") +\n  xlab(\"Schuldenquote\") +\n  geom_vline(xintercept = 0.6, color = \"red\", linetype = \"dashed\")\n\neu_2005f\n  "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 14:57:20"],"user":["Justin Maidhof"],"umph":[1667829440.2827],"ok":[false],"chunk":[21],"ex":[3],"e.ind":[1],"code":["#eu_vergleich <- eu_makro %>% \n#  filter(year==2005 | ___ | ___ | ___) %>%\n#  ggplot(aes(___)) + \n#  geom_histogram(___) +\n#  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n#  xlab(\"___\") +\n#  ylab(\"___\") +\n#  ggtitle(\"___\") +\n#  facet_wrap(___ ~., nrow=___)\n\n#eu_vergleich\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to eu_vergleich in chunk 3_c."]}
+,
+{"type":["hint"],"time":["2022-11-07 15:05:48"],"user":["Justin Maidhof"],"umph":[1667829948.9291],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:08:37"],"user":["Justin Maidhof"],"umph":[1667830117.4161],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:08:39"],"user":["Justin Maidhof"],"umph":[1667830119.4883],"ok":[false],"chunk":[21],"ex":[3],"e.ind":[1],"code":["#eu_vergleich <- eu_makro %>% \n#  filter(year==2005 | ___ | ___ | ___) %>%\n#  ggplot(aes(___)) + \n#  geom_histogram(___) +\n#  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n#  xlab(\"___\") +\n#  ylab(\"___\") +\n#  ggtitle(\"___\") +\n#  facet_wrap(___ ~., nrow=___)\n\n#eu_vergleich\n\n# enter your code here ...\neu_vergleich <- eu_makro %>%\n  filter(year == 2005 | 2008 | 2011 | 2014) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n  xlab(\"Schuldenquote\") +\n  ylab(\"Anzahl\") +\n  ggtitle(\"Verteilung der Schuldenquote\") +\n  facet_wrap(year ~., nrow = 5)\n\neu_vergleich"],"message":["\nYou have not made a correct assignment to eu_vergleich in chunk 3_c."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:09:15"],"user":["Justin Maidhof"],"umph":[1667830155.784],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:09:18"],"user":["Justin Maidhof"],"umph":[1667830158.4776],"ok":[false],"chunk":[21],"ex":[3],"e.ind":[1],"code":["#eu_vergleich <- eu_makro %>% \n#  filter(year==2005 | ___ | ___ | ___) %>%\n#  ggplot(aes(___)) + \n#  geom_histogram(___) +\n#  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n#  xlab(\"___\") +\n#  ylab(\"___\") +\n#  ggtitle(\"___\") +\n#  facet_wrap(___ ~., nrow=___)\n\n#eu_vergleich\n\n# enter your code here ...\neu_vergleich <- eu_makro %>%\n  filter(year == 2005 | 2008 | 2011 | 2014) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n  xlab(\"Schuldenquote\") +\n  ylab(\"Anzahl\") +\n  ggtitle(\"Verteilung der Schuldenquote\") +\n  facet_wrap(year ~., nrow = 1)\n\neu_vergleich"],"message":["\nYou have not made a correct assignment to eu_vergleich in chunk 3_c."]}
+,
+{"type":["hint"],"time":["2022-11-07 15:09:28"],"user":["Justin Maidhof"],"umph":[1667830168.6942],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:10:37"],"user":["Justin Maidhof"],"umph":[1667830237.8714],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:10:38"],"user":["Justin Maidhof"],"umph":[1667830238.6163],"ok":[false],"chunk":[21],"ex":[3],"e.ind":[1],"code":["#eu_vergleich <- eu_makro %>% \n#  filter(year==2005 | ___ | ___ | ___) %>%\n#  ggplot(aes(___)) + \n#  geom_histogram(___) +\n#  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n#  xlab(\"___\") +\n#  ylab(\"___\") +\n#  ggtitle(\"___\") +\n#  facet_wrap(___ ~., nrow=___)\n\n#eu_vergleich\n\n# enter your code here ...\neu_vergleich <- eu_makro %>%\n  filter(year == 2005 | year == 2008 | year ==2011 | year == 2014) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n  xlab(\"Schuldenquote\") +\n  ylab(\"Anzahl\") +\n  ggtitle(\"Verteilung der Schuldenquote\") +\n  facet_wrap(year ~., nrow = 1)\n\neu_vergleich"],"message":["\nYou have not made a correct assignment to eu_vergleich in chunk 3_c."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:11:00"],"user":["Justin Maidhof"],"umph":[1667830260.8138],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:11:01"],"user":["Justin Maidhof"],"umph":[1667830261.5573],"ok":[false],"chunk":[21],"ex":[3],"e.ind":[1],"code":["#eu_vergleich <- eu_makro %>% \n#  filter(year==2005 | ___ | ___ | ___) %>%\n#  ggplot(aes(___)) + \n#  geom_histogram(___) +\n#  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n#  xlab(\"___\") +\n#  ylab(\"___\") +\n#  ggtitle(\"___\") +\n#  facet_wrap(___ ~., nrow=___)\n\n#eu_vergleich\n\n# enter your code here ...\neu_vergleich <- eu_makro %>%\n  filter(year == 2005 | year == 2008 | year ==2011 | year == 2014) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n  xlab(\"Schuldenquote\") +\n  ylab(\"Anzahl\") +\n  ggtitle(\"Verteilung der Schuldenquote\") +\n  facet_wrap(year ~., nrow = 5)\n\neu_vergleich"],"message":["\nYou have not made a correct assignment to eu_vergleich in chunk 3_c."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:11:17"],"user":["Justin Maidhof"],"umph":[1667830277.4451],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:11:17"],"user":["Justin Maidhof"],"umph":[1667830277.9924],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["#eu_vergleich <- eu_makro %>% \n#  filter(year==2005 | ___ | ___ | ___) %>%\n#  ggplot(aes(___)) + \n#  geom_histogram(___) +\n#  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n#  xlab(\"___\") +\n#  ylab(\"___\") +\n#  ggtitle(\"___\") +\n#  facet_wrap(___ ~., nrow=___)\n\n#eu_vergleich\n\n# enter your code here ...\neu_vergleich <- eu_makro %>%\n  filter(year == 2005 | year == 2008 | year ==2011 | year == 2014) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n  xlab(\"Schuldenquote\") +\n  ylab(\"Anzahl\") +\n  ggtitle(\"Verteilung der Schuldenquote\") +\n  facet_wrap(year ~., nrow = 4)\n\neu_vergleich"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:11:17"],"user":["Justin Maidhof"],"umph":[1667830277.9998],"ok":[false],"chunk":[22],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:14:32"],"user":["Justin Maidhof"],"umph":[1667830472.3498],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:14:32"],"user":["Justin Maidhof"],"umph":[1667830472.3806],"ok":[false],"chunk":[22],"ex":[3],"e.ind":[1],"code":["\n# enter your code here ...\n2"],"message":["\nYou have not yet entered all correct commands in chunk 3_d."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:14:41"],"user":["Justin Maidhof"],"umph":[1667830481.4907],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:14:41"],"user":["Justin Maidhof"],"umph":[1667830481.5207],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:14:41"],"user":["Justin Maidhof"],"umph":[1667830481.5287],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to balken in chunk 3_e."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:15:04"],"user":["Justin Maidhof"],"umph":[1667830504.433],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:15:04"],"user":["Justin Maidhof"],"umph":[1667830504.4608],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to balken in chunk 3_e."]}
+,
+{"type":["hint"],"time":["2022-11-07 15:16:22"],"user":["Justin Maidhof"],"umph":[1667830582.694],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:18:03"],"user":["Justin Maidhof"],"umph":[1667830683.606],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:18:03"],"user":["Justin Maidhof"],"umph":[1667830683.6556],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         relation = debt_share_country - 0.6)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:18:03"],"user":["Justin Maidhof"],"umph":[1667830683.6644],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["hint"],"time":["2022-11-07 15:20:00"],"user":["Justin Maidhof"],"umph":[1667830800.6506],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 15:23:35"],"user":["Justin Maidhof"],"umph":[1667831015.4299],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:24:08"],"user":["Justin Maidhof"],"umph":[1667831048.6826],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:24:09"],"user":["Justin Maidhof"],"umph":[1667831049.0798],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:25:15"],"user":["Justin Maidhof"],"umph":[1667831115.6549],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:25:16"],"user":["Justin Maidhof"],"umph":[1667831116.0582],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:27:36"],"user":["Justin Maidhof"],"umph":[1667831256.9506],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:27:37"],"user":["Justin Maidhof"],"umph":[1667831257.0084],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         Relation = debt_share_country - 0.6)"],"message":["\nYou have not made a correct assignment to balken in chunk 3_e."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:27:59"],"user":["Justin Maidhof"],"umph":[1667831279.8441],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:27:59"],"user":["Justin Maidhof"],"umph":[1667831279.8937],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         relation = debt_share_country - 0.6)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:28:00"],"user":["Justin Maidhof"],"umph":[1667831280.2705],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = Relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:28:13"],"user":["Justin Maidhof"],"umph":[1667831293.1458],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:28:13"],"user":["Justin Maidhof"],"umph":[1667831293.4886],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = Relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:29:04"],"user":["Justin Maidhof"],"umph":[1667831344.7885],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:29:05"],"user":["Justin Maidhof"],"umph":[1667831345.1862],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:29:26"],"user":["Justin Maidhof"],"umph":[1667831366.1032],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:29:26"],"user":["Justin Maidhof"],"umph":[1667831366.4804],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = Relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:29:42"],"user":["Justin Maidhof"],"umph":[1667831382.3374],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:29:42"],"user":["Justin Maidhof"],"umph":[1667831382.3913],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         Relation = debt_share_country - 0.6)"],"message":["\nYou have not made a correct assignment to balken in chunk 3_e."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:31:59"],"user":["Justin Maidhof"],"umph":[1667831519.3671],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:31:59"],"user":["Justin Maidhof"],"umph":[1667831519.4145],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         relation = debt_share_country - 0.6)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:31:59"],"user":["Justin Maidhof"],"umph":[1667831519.8344],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["hint"],"time":["2022-11-07 15:32:07"],"user":["Justin Maidhof"],"umph":[1667831527.4883],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:34:14"],"user":["Justin Maidhof"],"umph":[1667831654.8002],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:34:15"],"user":["Justin Maidhof"],"umph":[1667831655.2882],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Laender\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:34:30"],"user":["Justin Maidhof"],"umph":[1667831670.6915],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:34:31"],"user":["Justin Maidhof"],"umph":[1667831671.0866],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = Laender, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Länder\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:35:25"],"user":["Justin Maidhof"],"umph":[1667831725.7663],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:35:26"],"user":["Justin Maidhof"],"umph":[1667831726.2367],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Länder\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:35:49"],"user":["Justin Maidhof"],"umph":[1667831749.7112],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:35:50"],"user":["Justin Maidhof"],"umph":[1667831750.1676],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Länder\") +\n  ylab(\"relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:36:28"],"user":["Justin Maidhof"],"umph":[1667831788.6012],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:36:28"],"user":["Justin Maidhof"],"umph":[1667831788.6574],"ok":[false],"chunk":[23],"ex":[3],"e.ind":[1],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         Relation = debt_share_country - 0.6)"],"message":["\nYou have not made a correct assignment to balken in chunk 3_e."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:36:40"],"user":["Justin Maidhof"],"umph":[1667831800.2568],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:36:40"],"user":["Justin Maidhof"],"umph":[1667831800.2949],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         relation = debt_share_country - 0.6)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:36:40"],"user":["Justin Maidhof"],"umph":[1667831800.6754],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = country, y = Relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Länder\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:36:52"],"user":["Justin Maidhof"],"umph":[1667831812.4455],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:36:52"],"user":["Justin Maidhof"],"umph":[1667831812.9274],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Länder\") +\n  ylab(\"Relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:37:56"],"user":["Justin Maidhof"],"umph":[1667831876.5666],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:37:57"],"user":["Justin Maidhof"],"umph":[1667831877.1427],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Länder\") +\n  ylab(\"relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:38:14"],"user":["Justin Maidhof"],"umph":[1667831894.8212],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:38:15"],"user":["Justin Maidhof"],"umph":[1667831895.2919],"ok":[false],"chunk":[24],"ex":[3],"e.ind":[1],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\n  filter(year == 2005) %>%\n  ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) +\n  xlab(\"Länder\") +\n  ylab(\"relation\") +\n  ggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":["\nYou have not made a correct assignment to plot_balken in chunk 3_f."]}
+,
+{"type":["hint"],"time":["2022-11-07 15:38:41"],"user":["Justin Maidhof"],"umph":[1667831921.9762],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:43:23"],"user":["Justin Maidhof"],"umph":[1667832203.5157],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:43:23"],"user":["Justin Maidhof"],"umph":[1667832203.9796],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\nfilter(year == 2005) %>%\nggplot(aes(x=country, y=relation)) + \ngeom_bar(stat=\"identity\", aes(fill=typ), width=0.5) +\nxlab(\"Laender\") +\nylab(\"Relation\") +\nggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:43:24"],"user":["Justin Maidhof"],"umph":[1667832204.4654],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["plot_balken_final <- plot_balken +\n  scale_fill_manual(name=\"Rel. Schuldenquote\", \n                    labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                    values = c(\"0\"=\"springgreen4\", \"1\"=\"red\"))\n\nplot_balken_final"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:43:24"],"user":["Justin Maidhof"],"umph":[1667832204.4714],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["#flipped_bars <- balken %>%\n#  filter(year==2005 | ___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(\"Relation\") +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  facet_wrap( ___~., ncol=___) +\n#  coord_flip()\n\n#flipped_bars\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to flipped_bars in chunk 3_h."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:43:43"],"user":["Justin Maidhof"],"umph":[1667832223.3522],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:43:43"],"user":["Justin Maidhof"],"umph":[1667832223.3753],"ok":[false],"chunk":[26],"ex":[3],"e.ind":[1],"code":["#flipped_bars <- balken %>%\n#  filter(year==2005 | ___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(\"Relation\") +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  facet_wrap( ___~., ncol=___) +\n#  coord_flip()\n\n#flipped_bars\n\n# enter your code here ...\n"],"message":["\nYou have not yet made an assignment to flipped_bars in chunk 3_h."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:47:55"],"user":["Justin Maidhof"],"umph":[1667832475.0033],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:47:55"],"user":["Justin Maidhof"],"umph":[1667832475.5183],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["#flipped_bars <- balken %>%\n#  filter(year==2005 | ___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(\"Relation\") +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  facet_wrap( ___~., ncol=___) +\n#  coord_flip()\n\n#flipped_bars\n\n# enter your code here ...\nflipped_bars <- balken %>%\nfilter(year==2005 | year == 2014) %>%\nggplot(aes(x=country, y=relation)) + \ngeom_bar(stat=\"identity\", aes(fill=typ), width=0.5) +\nxlab(\"Laender\") +\nylab(\"Relation\") +\nggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\nfacet_wrap( year~., ncol=2) +\ncoord_flip()\n  \n  flipped_bars"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:47:56"],"user":["Justin Maidhof"],"umph":[1667832476.1379],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["flipped_bars +\n  scale_fill_manual(name=\"Rel. Schuldenquote\", \n                    labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                    values = c(\"0\"=\"springgreen4\", \"1\"=\"red\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:47:56"],"user":["Justin Maidhof"],"umph":[1667832476.1492],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[0],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\n\nanimated_bars + transition_time(as.integer(year)) +\n  labs(title = \"Jahr: {frame_time}\")"],"message":["evaluation error in \n  animated_bars + transition_time(as.integer(year)) + labs(title = \"Jahr: {frame_time}\")\n  Error:  Objekt 'animated_bars' nicht gefunden\n"]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:52:41"],"user":["Justin Maidhof"],"umph":[1667832761.8867],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:53:11"],"user":["Justin Maidhof"],"umph":[1667832791.0901],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\nggplot(aes(x=country, y=relation)) + \ngeom_bar(stat=\"identity\", aes(fill=typ), width=0.5) +\nxlab(\"Laender\") +\nylab(\"Realtion\") +\nggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\nscale_fill_manual(name=\"Rel. Schuldenquote\", \n                 labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                    values =  c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n coord_flip()\nanimated_bars + transition_time(as.integer(year)) +\n  labs(title = \"Jahr: {frame_time}\")"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["hint"],"time":["2022-11-07 15:53:46"],"user":["Justin Maidhof"],"umph":[1667832826.9926],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 15:57:48"],"user":["Justin Maidhof"],"umph":[1667833068.0539],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 15:58:16"],"user":["Justin Maidhof"],"umph":[1667833096.7353],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\nggplot(aes(x=country, y=relation)) + \ngeom_bar(stat=\"identity\", aes(fill=typ), width=0.5) +\nxlab(\"Laender\") +\nylab(\"Realtion\") +\nggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\nscale_fill_manual(name=\"Rel. Schuldenquote\", \n                 labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                    values =  c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n coord_flip()\nanimated_bars + transition_time(as.integer(year)) +\n  labs(title = \"Jahr: {frame_time}\")"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:00:20"],"user":["Justin Maidhof"],"umph":[1667833220.1485],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:00:50"],"user":["Justin Maidhof"],"umph":[1667833250.2098],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\nggplot(aes(x=country, y=relation)) + \ngeom_bar(stat=\"identity\", aes(fill=typ), width=0.5) +\nxlab(\"Laender\") +\nylab(\"Realtion\") +\nggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\nscale_fill_manual(name=\"Rel. Schuldenquote\", \n                 labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                    values =  c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n coord_flip() \nanimated_bars + transition_time(as.integer(year)) +\n  labs(title = \"Jahr: {frame_time}\")"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["hint"],"time":["2022-11-07 16:07:31"],"user":["Justin Maidhof"],"umph":[1667833651.3893],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:10:32"],"user":["Justin Maidhof"],"umph":[1667833832.3679],"ok":[true]}
+,
+{"type":["hint"],"time":["2022-11-07 16:10:38"],"user":["Justin Maidhof"],"umph":[1667833838.1194],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[0]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:13:35"],"user":["Justin Maidhof"],"umph":[1667834015.0641],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:13:35"],"user":["Justin Maidhof"],"umph":[1667834015.0925],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[0],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() +\nanimated_bars + transition_time(as.integer(year))\n  labs(title = \"Jahr: {frame_time}\")"],"message":["evaluation error in \n  animated_bars <- balken %>% ggplot(aes(x = country, y = relation)) + geom_bar(stat = \"identity\", aes(fill = typ), width = 0.5) + xlab(\"Laender\") + ylab(\"Realtion\") + ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") + scale_fill_manual(name = \"Rel. Schuldenquote\", labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"), values = c(`0` = \"springgreen4\", `1` = \"red\")) + coord_flip() + animated_bars + transition_time(as.integer(year))\n  Error:  Objekt 'animated_bars' nicht gefunden\n"]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:14:22"],"user":["Justin Maidhof"],"umph":[1667834062.8282],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:14:52"],"user":["Justin Maidhof"],"umph":[1667834092.6801],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n  labs(title = \"Jahr: {frame_time}\")"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["hint"],"time":["2022-11-07 16:16:21"],"user":["Justin Maidhof"],"umph":[1667834181.3091],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:18:26"],"user":["Justin Maidhof"],"umph":[1667834306.05],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:18:55"],"user":["Justin Maidhof"],"umph":[1667834335.5675],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n  labs(title = \"Jahr: {frame_time}\")"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:21:02"],"user":["Justin Maidhof"],"umph":[1667834462.9459],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:21:03"],"user":["Justin Maidhof"],"umph":[1667834463.1333],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \n\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:21:24"],"user":["Justin Maidhof"],"umph":[1667834484.9184],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:21:25"],"user":["Justin Maidhof"],"umph":[1667834485.122],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \n\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["hint"],"time":["2022-11-07 16:21:39"],"user":["Justin Maidhof"],"umph":[1667834499.6611],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:22:48"],"user":["Justin Maidhof"],"umph":[1667834568.7315],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:22:48"],"user":["Justin Maidhof"],"umph":[1667834568.9827],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \n\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:25:08"],"user":["Justin Maidhof"],"umph":[1667834708.6924],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:25:39"],"user":["Justin Maidhof"],"umph":[1667834739.2513],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\nlabs(title = \"Jahr: {frame_time}\")\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:26:50"],"user":["Justin Maidhof"],"umph":[1667834810.5591],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:27:22"],"user":["Justin Maidhof"],"umph":[1667834842.0405],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars <- balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["hint"],"time":["2022-11-07 16:27:27"],"user":["Justin Maidhof"],"umph":[1667834847.2749],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 16:30:45"],"user":["Justin Maidhof"],"umph":[1667835045.1024],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:32:40"],"user":["Justin Maidhof"],"umph":[1667835160.5639],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:33:12"],"user":["Justin Maidhof"],"umph":[1667835192.7424],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars = balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["hint"],"time":["2022-11-07 16:35:17"],"user":["Justin Maidhof"],"umph":[1667835317.4759],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:38:10"],"user":["Justin Maidhof"],"umph":[1667835490.9202],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:38:11"],"user":["Justin Maidhof"],"umph":[1667835491.2214],"ok":[true],"chunk":[29],"ex":[4],"e.ind":[0],"code":["dat <-  readRDS(\"./data/eu_macro_maps.Rds\")\nhead(dat)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:38:11"],"user":["Justin Maidhof"],"umph":[1667835491.2564],"ok":[false],"chunk":[30],"ex":[4],"e.ind":[1],"code":["# Erstelle die Spalte debt_share in Prozent und gerundet\ndat <-  dat %>%\n  mutate(debt_share = round(100*gov_debt / gdp))\n# Erstelle die Spalte label fuer die Beschriftung zur Verschuldung\n# in der Karte\ndat <-  dat %>%\n  mutate(label = paste0(cntry,\" \", debt_share,\"%\"))\n\n# Erstelle schoene Farbpalette \n# mit RColorBrewer\ncolours = rev(brewer.pal(8,\"RdYlGn\"))\n#dat %>%\n#  ggplot() +\n#  geom_sf(aes(fill=___, geometry=geometry)) +\n#  geom_sf_text(aes(label=___, geometry=geometry), size=3)+\n#  theme_void() + \n#  scale_fill_gradientn(colours = colours, name = ___) +\n#  theme(panel.grid.major = element_line(color = \"white\"))\n\n# enter your code here ...\n\n"],"message":["\nYou have not yet entered all correct commands in chunk 4___Kartenmaterial__2."]}
+,
+{"type":["hint"],"time":["2022-11-07 16:38:15"],"user":["Justin Maidhof"],"umph":[1667835495.9124],"ok":[true],"chunk":[30],"ex":[4],"e.ind":[1]}
+,
+{"type":["hint"],"time":["2022-11-07 16:44:53"],"user":["Justin Maidhof"],"umph":[1667835893.4521],"ok":[true],"chunk":[30],"ex":[4],"e.ind":[1]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:46:18"],"user":["Justin Maidhof"],"umph":[1667835978.5651],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:46:20"],"user":["Justin Maidhof"],"umph":[1667835980.0677],"ok":[true],"chunk":[30],"ex":[4],"e.ind":[0],"code":["# Erstelle die Spalte debt_share in Prozent und gerundet\ndat <-  dat %>%\n  mutate(debt_share = round(100*gov_debt / gdp))\n# Erstelle die Spalte label fuer die Beschriftung zur Verschuldung\n# in der Karte\ndat <-  dat %>%\n  mutate(label = paste0(cntry,\" \", debt_share,\"%\"))\n\n# Erstelle schoene Farbpalette \n# mit RColorBrewer\ncolours = rev(brewer.pal(8,\"RdYlGn\"))\n#dat %>%\n#  ggplot() +\n#  geom_sf(aes(fill=___, geometry=geometry)) +\n#  geom_sf_text(aes(label=___, geometry=geometry), size=3)+\n#  theme_void() + \n#  scale_fill_gradientn(colours = colours, name = ___) +\n#  theme(panel.grid.major = element_line(color = \"white\"))\n\n# enter your code here ...\ndat %>%\nggplot() +\ngeom_sf(aes(fill=debt_share, geometry=geometry)) +\ngeom_sf_text(aes(label=label, geometry=geometry), size=3)+\ntheme_void() + \nscale_fill_gradientn(colours = colours, name = \"Schuldenquote\") +\ntheme(panel.grid.major = element_line(color = \"white\"))\n\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:46:52"],"user":["Justin Maidhof"],"umph":[1667836012.1167],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars = balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:49:22"],"user":["Justin Maidhof"],"umph":[1667836162.8162],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:49:55"],"user":["Justin Maidhof"],"umph":[1667836195.5385],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars = balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_ps"],"time":["2022-11-07 16:50:04"],"user":["Justin Maidhof"],"umph":[1667836204.0663],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:50:39"],"user":["Justin Maidhof"],"umph":[1667836239.9601],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars = balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["hint"],"time":["2022-11-07 16:50:47"],"user":["Justin Maidhof"],"umph":[1667836247.4271],"ok":[true],"chunk":[28],"ex":[3],"e.ind":[1]}
+,
+{"type":["grade_ps"],"time":["2022-11-07 16:51:46"],"user":["Justin Maidhof"],"umph":[1667836306.1198],"ok":[true]}
+,
+{"type":["init_ps"],"time":["2022-11-07 16:51:46"],"user":["Justin Maidhof"],"umph":[1667836306.1438],"ok":[true]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:46"],"user":["Justin Maidhof"],"umph":[1667836306.1608],"ok":[true],"chunk":[1],"ex":[1],"e.ind":[0],"code":["library(tidyverse)\nlibrary(pander)\nlibrary(sf)\nlibrary(gganimate)\nlibrary(ggrepel)\nlibrary(skimr)\nlibrary(RColorBrewer)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:46"],"user":["Justin Maidhof"],"umph":[1667836306.5096],"ok":[true],"chunk":[2],"ex":[1],"e.ind":[0],"code":["\n\n# enter your code here ...\neu_makro <- read_csv(\"data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:47"],"user":["Justin Maidhof"],"umph":[1667836307.3128],"ok":[true],"chunk":[3],"ex":[1],"e.ind":[0],"code":["\n# enter your code here . . .\nueberblick <- skim(eu_makro)\nueberblick"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:47"],"user":["Justin Maidhof"],"umph":[1667836307.4916],"ok":[true],"chunk":[4],"ex":[1],"e.ind":[0],"code":["panderOptions('knitr.auto.asis', FALSE)\nueberblick %>% pander(style=\"rmarkdown\") "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:47"],"user":["Justin Maidhof"],"umph":[1667836307.4991],"ok":[true],"chunk":[5],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:47"],"user":["Justin Maidhof"],"umph":[1667836307.5063],"ok":[true],"chunk":[6],"ex":[1],"e.ind":[0],"code":["\n# enter your code here ...\n2"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:47"],"user":["Justin Maidhof"],"umph":[1667836307.6218],"ok":[true],"chunk":[7],"ex":[1],"e.ind":[0],"code":["\n\n# enter your code here ...\ndeskriptives <- eu_makro %>%\n  group_by(country) %>%\n  summarize(Mittel = round(mean(debt_share_country, na.rm=TRUE),2), SD = round(sd(debt_share_country, na.rm=TRUE),2), Min = round(min(debt_share_country, na.rm=TRUE),2), Median = round(median(debt_share_country, na.rm=TRUE),2), Max = round(max(debt_share_country, na.rm=TRUE),2)) %>%\n        arrange(desc(Median))\ndeskriptives"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:47"],"user":["Justin Maidhof"],"umph":[1667836307.7174],"ok":[true],"chunk":[8],"ex":[2],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:47"],"user":["Justin Maidhof"],"umph":[1667836307.7407],"ok":[true],"chunk":[9],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ndeutschland <- eu_makro %>%\n  filter(country == \"Germany\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:48"],"user":["Justin Maidhof"],"umph":[1667836308.0493],"ok":[true],"chunk":[10],"ex":[2],"e.ind":[0],"code":["#g1 <- ___ %>%\n#  ggplot() + geom_point(___(x = ___, y = ___))\n\n#g1\n\n# enter your code here ...\ng1 <- deutschland %>%\n  ggplot() + geom_point(aes(x = year, y = gdp))\n\ng1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:48"],"user":["Justin Maidhof"],"umph":[1667836308.4997],"ok":[true],"chunk":[11],"ex":[2],"e.ind":[0],"code":["\n# enter your code here ...\ng2 = g1 + geom_line(aes(x = year, y = gov_debt))\n\ng2\n\n"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:49"],"user":["Justin Maidhof"],"umph":[1667836309.983],"ok":[true],"chunk":[12],"ex":[2],"e.ind":[0],"code":["# g3 <- ____ %>%\n#   ggplot() + \n#   geom_line(aes(x = ____, y = ____, group=____, colour=____))\n#\n#g3\n\n# enter your code here ...\ng3 <- eu_makro %>%\n  ggplot() +\n  geom_line(aes(x = year, y = debt_share_country, group=country, colour=country))\n\ng3"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:50"],"user":["Justin Maidhof"],"umph":[1667836310.0092],"ok":[true],"chunk":[13],"ex":[2],"e.ind":[0],"code":["#eu_analyse <- eu_makro %>%\n#  filter(___) %>%\n#  mutate( Laender = case_when(\n#    country == \"___\" ~ \"Deutschland\",\n#    country == \"___\" ~ \"Italien\",\n#    TRUE ~ \"___\"))\n\n# enter your code here ...\neu_analyse <- eu_makro %>%\n  filter(year >= 1995) %>%\n  mutate(Laender = case_when(\n    country == \"Germany\" ~ \"Deutschland\",\n    country == \"Italy\" ~ \"Italien\",\n    TRUE ~ \"Andere\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:51"],"user":["Justin Maidhof"],"umph":[1667836311.2],"ok":[true],"chunk":[14],"ex":[2],"e.ind":[0],"code":["#g4 <- eu_analyse %>%\n#  ggplot() + \n#  geom_line(aes(x = year, y = debt_share_country, group = ___, colour = ___))\n\n#g4\n\n# enter your code here ...\ng4 <- eu_analyse %>%\n  ggplot() +\n  geom_line(aes(x = year, y = debt_share_country, group = country, colour = Laender))\n\ng4"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:52"],"user":["Justin Maidhof"],"umph":[1667836312.0104],"ok":[true],"chunk":[15],"ex":[2],"e.ind":[0],"code":["#g5 <- g4 + \n#  ylab(\"___\") + \n#  xlab(\"___\") +\n#  scale_colour_manual(name = \"___\", \n#                      values = c(\"___\", \"___\", \"___\"))\n#\n#g5\n\n# enter your code here ...\ng5 <- g4 +\n  ylab(\"Schuldenquote\") +\n  xlab(\"Jahr\") +\n  scale_colour_manual(name = \"Laender\",\n                      values = c(\"grey\", \"springgreen4\", \"blue\"))\n\ng5"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:52"],"user":["Justin Maidhof"],"umph":[1667836312.6346],"ok":[true],"chunk":[16],"ex":[2],"e.ind":[0],"code":["#final <- g5 +\n#  ___(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") +\n#  ___(___=0.60, ___ = \"red\")\n\n#final\n\n# enter your code here ...\nfinal <- g5 +\n  ggtitle(\"Schuldenquote einzelner EU-Laender von 1995 - 2017\") + \n  geom_hline(yintercept = 0.6, color = \"red\")\n\nfinal"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:53"],"user":["Justin Maidhof"],"umph":[1667836313.1932],"ok":[true],"chunk":[17],"ex":[2],"e.ind":[0],"code":["final +\n  theme_bw() +\n  guides(color = FALSE) +\n  geom_text_repel(aes(x = year, y = debt_share_country, label = Laender),\n                  data          = filter(eu_analyse %>% filter(Laender!=\"Andere\", year==last(year))),\n                  size          = 4,\n                  box.padding   = 1.5,\n                  point.padding = 0.5,\n                  force         = 100,\n                  segment.size  = 0.2,\n                  segment.color = \"grey50\",\n                  direction     = \"x\")"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:53"],"user":["Justin Maidhof"],"umph":[1667836313.7441],"ok":[true],"chunk":[18],"ex":[3],"e.ind":[0],"code":["eu_makro <- read_csv(\"./data/EU_Makro.csv\")\neu_analyse <- eu_makro %>%\n  filter(year>=1995) %>%\n  mutate( Laender = case_when(\n    country == \"Germany\" ~ \"Deutschland\",\n    country == \"Italy\" ~ \"Italien\",\n    TRUE ~ \"Andere\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:54"],"user":["Justin Maidhof"],"umph":[1667836314.1442],"ok":[true],"chunk":[19],"ex":[3],"e.ind":[0],"code":["#eu_2005 <- eu_makro %>% \n#  filter(___) %>%\n#  ggplot(aes(___)) + \n#  ___\n\n#eu_2005\n\n# enter your code here ...\neu_2005 <- eu_makro %>%\n  filter(year == 2005) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram()\n\neu_2005"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:54"],"user":["Justin Maidhof"],"umph":[1667836314.5845],"ok":[true],"chunk":[20],"ex":[3],"e.ind":[0],"code":["#eu_2005f <- ___ %>%\n#  filter(___) %>%\n#  ggplot(aes(___)) +\n#  geom_histogram(___) + \n#  ylab(___) +\n#  xlab(___) +\n#  ___(___ = 0.6, color=\"___\", linetype=\"___\")\n#\n#eu_2005f\n\n# enter your code here ...\neu_2005f <- eu_makro %>%\n  filter(year == 2005) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  ylab(\"Anzahl\") +\n  xlab(\"Schuldenquote\") +\n  geom_vline(xintercept = 0.6, color = \"red\", linetype = \"dashed\")\n\neu_2005f\n  "],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:55"],"user":["Justin Maidhof"],"umph":[1667836315.7649],"ok":[true],"chunk":[21],"ex":[3],"e.ind":[0],"code":["#eu_vergleich <- eu_makro %>% \n#  filter(year==2005 | ___ | ___ | ___) %>%\n#  ggplot(aes(___)) + \n#  geom_histogram(___) +\n#  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n#  xlab(\"___\") +\n#  ylab(\"___\") +\n#  ggtitle(\"___\") +\n#  facet_wrap(___ ~., nrow=___)\n\n#eu_vergleich\n\n# enter your code here ...\neu_vergleich <- eu_makro %>%\n  filter(year == 2005 | year == 2008 | year ==2011 | year == 2014) %>%\n  ggplot(aes(debt_share_country)) +\n  geom_histogram(binwidth = 0.01) +\n  geom_vline(xintercept = 0.6, color=\"red\", linetype=\"dashed\") +\n  xlab(\"Schuldenquote\") +\n  ylab(\"Anzahl\") +\n  ggtitle(\"Verteilung der Schuldenquote\") +\n  facet_wrap(year ~., nrow = 4)\n\neu_vergleich"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:55"],"user":["Justin Maidhof"],"umph":[1667836315.7723],"ok":[true],"chunk":[22],"ex":[3],"e.ind":[0],"code":["\n# enter your code here ...\n1"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:55"],"user":["Justin Maidhof"],"umph":[1667836315.7866],"ok":[true],"chunk":[23],"ex":[3],"e.ind":[0],"code":["#balken <- eu_analyse %>%\n#  mutate( typ = ___(___(debt_share_country>___,1,0)),\n#          relation = debt_share_country - ___)\n\n# enter your code here ...\nbalken <- eu_analyse %>%\n  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),\n         relation = debt_share_country - 0.6)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:56"],"user":["Justin Maidhof"],"umph":[1667836316.4508],"ok":[true],"chunk":[24],"ex":[3],"e.ind":[0],"code":["#plot_balken <- balken %>%\n#  filter(___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom____(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005\")\n\n#plot_balken\n\n# enter your code here ...\nplot_balken <- balken %>%\nfilter(year == 2005) %>%\nggplot(aes(x=country, y=relation)) + \ngeom_bar(stat=\"identity\", aes(fill=typ), width=0.5) +\nxlab(\"Laender\") +\nylab(\"Relation\") +\nggtitle(\"Einhaltung der Maastricht Kriterien in 2005\")\n\nplot_balken"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:57"],"user":["Justin Maidhof"],"umph":[1667836317.4935],"ok":[true],"chunk":[25],"ex":[3],"e.ind":[0],"code":["plot_balken_final <- plot_balken +\n  scale_fill_manual(name=\"Rel. Schuldenquote\", \n                    labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                    values = c(\"0\"=\"springgreen4\", \"1\"=\"red\"))\n\nplot_balken_final"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:58"],"user":["Justin Maidhof"],"umph":[1667836318.2854],"ok":[true],"chunk":[26],"ex":[3],"e.ind":[0],"code":["#flipped_bars <- balken %>%\n#  filter(year==2005 | ___) %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=___) +\n#  xlab(___) +\n#  ylab(\"Relation\") +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  facet_wrap( ___~., ncol=___) +\n#  coord_flip()\n\n#flipped_bars\n\n# enter your code here ...\nflipped_bars <- balken %>%\nfilter(year==2005 | year == 2014) %>%\nggplot(aes(x=country, y=relation)) + \ngeom_bar(stat=\"identity\", aes(fill=typ), width=0.5) +\nxlab(\"Laender\") +\nylab(\"Relation\") +\nggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\nfacet_wrap( year~., ncol=2) +\ncoord_flip()\n  \n  flipped_bars"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:51:59"],"user":["Justin Maidhof"],"umph":[1667836319.2369],"ok":[true],"chunk":[27],"ex":[3],"e.ind":[0],"code":["flipped_bars +\n  scale_fill_manual(name=\"Rel. Schuldenquote\", \n                    labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                    values = c(\"0\"=\"springgreen4\", \"1\"=\"red\"))"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:52:26"],"user":["Justin Maidhof"],"umph":[1667836346.7634],"ok":[false],"chunk":[28],"ex":[3],"e.ind":[1],"code":["#animated_bars <- balken %>%\n#  ggplot(aes(x=___, y=___)) + \n#  geom_bar(stat=___, aes(fill=___), width=.5) +\n#  ___(\"Laender\") +\n#  ylab(___) +\n#  ___(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\") +\n#  scale_fill_manual(name=\"Rel. Schuldenquote\", \n#                    ___ = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n#                    ___ = c(\"0\"=\"springgreen4\", \"1\"=\"red\")) +\n#  coord_flip()\n\n# enter your code here ...\nanimated_bars = balken %>%\n ggplot(aes(x = country, y = relation)) +\n  geom_bar(stat = \"identity\", aes(fill=typ), width=0.5) +\n             xlab(\"Laender\") +\n             ylab(\"Realtion\") +\n             ggtitle(\"Einhaltung der Maastricht Kriterien in 2005 und 2014\")+\n             scale_fill_manual(name = \"Rel. Schuldenquote\", \n                              labels = c(\"Erfuellt Maastricht\", \"Verletzt Maastricht\"),\n                              values = c(\"0\" = \"springgreen4\", \"1\" = \"red\")) +\ncoord_flip() \nanimated_bars + transition_time(as.integer(year))\n"],"message":["\nYou have not made a correct assignment to animated_bars in chunk 3_j."]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:52:26"],"user":["Justin Maidhof"],"umph":[1667836346.8922],"ok":[true],"chunk":[29],"ex":[4],"e.ind":[0],"code":["dat <-  readRDS(\"./data/eu_macro_maps.Rds\")\nhead(dat)"],"message":[""]}
+,
+{"type":["check_chunk"],"time":["2022-11-07 16:52:28"],"user":["Justin Maidhof"],"umph":[1667836348.6701],"ok":[true],"chunk":[30],"ex":[4],"e.ind":[0],"code":["# Erstelle die Spalte debt_share in Prozent und gerundet\ndat <-  dat %>%\n  mutate(debt_share = round(100*gov_debt / gdp))\n# Erstelle die Spalte label fuer die Beschriftung zur Verschuldung\n# in der Karte\ndat <-  dat %>%\n  mutate(label = paste0(cntry,\" \", debt_share,\"%\"))\n\n# Erstelle schoene Farbpalette \n# mit RColorBrewer\ncolours = rev(brewer.pal(8,\"RdYlGn\"))\n#dat %>%\n#  ggplot() +\n#  geom_sf(aes(fill=___, geometry=geometry)) +\n#  geom_sf_text(aes(label=___, geometry=geometry), size=3)+\n#  theme_void() + \n#  scale_fill_gradientn(colours = colours, name = ___) +\n#  theme(panel.grid.major = element_line(color = \"white\"))\n\n# enter your code here ...\ndat %>%\nggplot() +\ngeom_sf(aes(fill=debt_share, geometry=geometry)) +\ngeom_sf_text(aes(label=label, geometry=geometry), size=3)+\ntheme_void() + \nscale_fill_gradientn(colours = colours, name = \"Schuldenquote\") +\ntheme(panel.grid.major = element_line(color = \"white\"))\n\n"],"message":[""]}
+,
