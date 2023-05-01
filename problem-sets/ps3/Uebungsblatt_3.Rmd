@@ -1,7 +1,7 @@
 
 ```{r 'check_ps', include=FALSE}
 
-user.name = 'ENTER A USER NAME HERE' # set to your user name
+user.name = 'Justin Maidhof' # set to your user name
 
 # To check your problem set, run the 
 # RStudio Addin 'Check Problemset'
@@ -65,10 +65,10 @@ library(RColorBrewer)
 a) Im ersten Schritt laden wir die zur Verfuegung stehenden Daten. Laden Sie die im Unterordner "Daten" bereitgestellten Datei `EU_Makro.csv` in R ein. Ergaenzen Sie hierfuer unten stehende Code-Zeile.
 
 ```{r "1___Deskriptive_Anal_a"}
-____ <- read_csv("____")
+
 
 # enter your code here ...
-
+eu_makro <- read_csv("data/EU_Makro.csv")
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -77,8 +77,9 @@ b) Erstellen Sie hierfuer eine Tabelle, welche alle Variablen von `eu_makro` ent
 
 ```{r "1___Deskriptive_Anal_b"}
 
-# enter your code here ...
-
+# enter your code here . . .
+ueberblick <- skim(eu_makro)
+ueberblick
 ```
 
 c) Mit dem Paket `pander` koennen Sie ihre deskriptiven Statistiken etwas schoener darstellen, insbesondere, wenn Sie spaeter in ihren Projekten HTML Dokumente mit RMarkdown erstellen. Deshalb wollen wir das Paket hier direkt einfuehren. Sie koennen den Chunk einfach laufen lassen und das Ergebnis betrachten:
@@ -101,7 +102,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "1___Deskriptive_Anal_c_2",optional=TRUE}
 
 # enter your code here ...
-
+2
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -115,7 +116,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "1___Deskriptive_Anal_c_3",optional=TRUE}
 
 # enter your code here ...
-
+2
 ```
 
 Dieser Ueberblick ermoeglicht uns generelle Fragestellungen mit dem Datensatz zu beantworten. Jedoch erhalten wir hier keine Informationen ueber die einzelnen Laendern, weshalb wir uns in der folgenden Fragestellung die Schuldenquote fuer die einzelnen Laender anschauen moechten.
@@ -123,19 +124,14 @@ Dieser Ueberblick ermoeglicht uns generelle Fragestellungen mit dem Datensatz zu
 d) Mit `summarize` koennen Sie eine Tabelle aller EU-Laender erstellen und von der Schuldenquote (`debt_share_country`) jedes Landes den Mittelwert (Mittel), die Standardabweichung (SD), das Minimum (Min), Median (Median) und Maximum (Max) ausgeben (in Klammern steht der Name wie Sie die Variable nennen sollen). Runden Sie alle Werte auf zwei Nachkommastellen. Achten Sie darauf, dass `NAs` nicht in ihre Berechnungen aufgenommen werden. Nutzen Sie den Datensatz `eu_makro` und gruppieren Sie ihre Daten nach Laendern. Sortieren Sie ihre deskriptive Tabelle absteigend nach dem Median der Schuldenquote. Speichern Sie ihre Daten in `deskriptives` ab und geben Sie anschliessend `deskriptives` aus.
 
 ```{r "1___Deskriptive_Anal_d"}
-#deskriptives <- eu_makro %>%
-#  group_by(___) %>%
-#  summarize(Mittel = round(___(debt_share_country, na.rm=TRUE),2),
-#            SD = round(___(debt_share_country, na.rm=TRUE),2),
-#            Min = round(___(debt_share_country, na.rm=TRUE),2),
-#            Median = round(___(debt_share_country, na.rm=TRUE),2),
-#            Max = round(___(debt_share_country, na.rm=TRUE),2)) %>%
-#  arrange(___(___))
 
-#deskriptives
 
 # enter your code here ...
-
+deskriptives <- eu_makro %>%
+  group_by(country) %>%
+  summarize(Mittel = round(mean(debt_share_country, na.rm=TRUE),2), SD = round(sd(debt_share_country, na.rm=TRUE),2), Min = round(min(debt_share_country, na.rm=TRUE),2), Median = round(median(debt_share_country, na.rm=TRUE),2), Max = round(max(debt_share_country, na.rm=TRUE),2)) %>%
+        arrange(desc(Median))
+deskriptives
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -165,7 +161,8 @@ a) Um `ggplot` besser zu verstehen wollen wir erste Grafiken nur fuer Deutschlan
 ```{r "2_a"}
 
 # enter your code here ...
-
+deutschland <- eu_makro %>%
+  filter(country == "Germany")
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -178,7 +175,10 @@ b) Nun koennen Sie das Bruttoinlandsprodukt (`gdp`) fuer Deutschland darstellen.
 #g1
 
 # enter your code here ...
+g1 <- deutschland %>%
+  ggplot() + geom_point(aes(x = year, y = gdp))
 
+g1
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -187,6 +187,10 @@ c) Das Bruttoinlandsprodukt ist ueber die Jahre staendig gestiegen. Wie haben si
 ```{r "2_c"}
 
 # enter your code here ...
+g2 = g1 + geom_line(aes(x = year, y = gov_debt))
+
+g2
+
 
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -203,7 +207,11 @@ d) Tragen Sie die Schuldenquote `debt_share_country` aller Laender in einem Scha
 #g3
 
 # enter your code here ...
+g3 <- eu_makro %>%
+  ggplot() +
+  geom_line(aes(x = year, y = debt_share_country, group=country, colour=country))
 
+g3
 ```
 
 Hui...farbenfroh!
@@ -223,7 +231,12 @@ e) Filtern Sie ihren Datensatz auf die Jahre 1995 und groesser. Da wir uns neben
 #    TRUE ~ "___"))
 
 # enter your code here ...
-
+eu_analyse <- eu_makro %>%
+  filter(year >= 1995) %>%
+  mutate(Laender = case_when(
+    country == "Germany" ~ "Deutschland",
+    country == "Italy" ~ "Italien",
+    TRUE ~ "Andere"))
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -237,7 +250,11 @@ f) Nun koennen Sie mit dem Datensatz `eu_analyse` eine neue Grafik erstellen, we
 #g4
 
 # enter your code here ...
+g4 <- eu_analyse %>%
+  ggplot() +
+  geom_line(aes(x = year, y = debt_share_country, group = country, colour = Laender))
 
+g4
 ```
 
 Hmm, ok...Sieht schon etwas besser aus, allerdings ist das rot etwas aufdringlich und die Achsenbezeichnungen stimmen noch nicht. Ein Titel waere auch nicht schlecht.
@@ -256,7 +273,13 @@ g) Nutzen Sie die Grafik `g4` aus der vorherigen Aufgabe und fuegen als Beschrif
 #g5
 
 # enter your code here ...
+g5 <- g4 +
+  ylab("Schuldenquote") +
+  xlab("Jahr") +
+  scale_colour_manual(name = "Laender",
+                      values = c("grey", "springgreen4", "blue"))
 
+g5
 ```
 
 Ok, das sieht doch schon ganz gut aus.
@@ -273,7 +296,11 @@ h) Um einen Ueberblick zu erhalten, ob die Schuldenquote besonders hoch oder nie
 #final
 
 # enter your code here ...
+final <- g5 +
+  ggtitle("Schuldenquote einzelner EU-Laender von 1995 - 2017") + 
+  geom_hline(yintercept = 0.6, color = "red")
 
+final
 ```
 
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
@@ -323,7 +350,12 @@ a) Betrachten Sie die Verteilung der Schuldenquote bei den EU Laendern im `eu_ma
 #eu_2005
 
 # enter your code here ...
+eu_2005 <- eu_makro %>%
+  filter(year == 2005) %>%
+  ggplot(aes(debt_share_country)) +
+  geom_histogram()
 
+eu_2005
 ```
 
 Als erstes Histogramm gar nicht mal schlecht! Jetzt schauen wir mal, was wir da noch machen koennen.
@@ -344,7 +376,16 @@ b) Die Achsenbeschriftungen sind noch etwas behaebig. Benennen Sie doch bitte di
 #eu_2005f
 
 # enter your code here ...
+eu_2005f <- eu_makro %>%
+  filter(year == 2005) %>%
+  ggplot(aes(debt_share_country)) +
+  geom_histogram(binwidth = 0.01) +
+  ylab("Anzahl") +
+  xlab("Schuldenquote") +
+  geom_vline(xintercept = 0.6, color = "red", linetype = "dashed")
 
+eu_2005f
+  
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -364,7 +405,17 @@ c) Um Vergleichswerte zu bekommen waere es ganz hilfreich die Verteilungen der S
 #eu_vergleich
 
 # enter your code here ...
+eu_vergleich <- eu_makro %>%
+  filter(year == 2005 | year == 2008 | year ==2011 | year == 2014) %>%
+  ggplot(aes(debt_share_country)) +
+  geom_histogram(binwidth = 0.01) +
+  geom_vline(xintercept = 0.6, color="red", linetype="dashed") +
+  xlab("Schuldenquote") +
+  ylab("Anzahl") +
+  ggtitle("Verteilung der Schuldenquote") +
+  facet_wrap(year ~., nrow = 4)
 
+eu_vergleich
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -379,7 +430,7 @@ Geben Sie hier die Ziffer Ihrer Antwort ein und fuehren Sie die Codezeile aus:
 ```{r "3_d",optional=TRUE}
 
 # enter your code here ...
-
+1
 ```
 
 Histogramme sind sehr schoen um Verteilungen darzustellen. Jedoch verlieren wir bei diesen die Information, um welches Land es sich genau gehandelt hat. Deshalb wollen wir im naechsten Schritt ein Balkendiagramm aufzeigen, welches die Namen der Laender beinhaltet. Tragen Sie in einem Balkendiagramm die Schuldenquote _relativ_ zu den im Maastricht-Vertrag vorgegebenen 60% des BIP ab. 
@@ -392,7 +443,9 @@ e) Erzeugen Sie im ersten Schritt eine Indikatorvariable "typ" welche 1 ist, wen
 #          relation = debt_share_country - ___)
 
 # enter your code here ...
-
+balken <- eu_analyse %>%
+  mutate(typ = as.factor(ifelse(debt_share_country>0.6,1,0)),
+         relation = debt_share_country - 0.6)
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -410,7 +463,15 @@ f) Verwenden Sie den in Aufgabe e) erzeugten `balken` Datensatz und erstellen Si
 #plot_balken
 
 # enter your code here ...
+plot_balken <- balken %>%
+filter(year == 2005) %>%
+ggplot(aes(x=country, y=relation)) + 
+geom_bar(stat="identity", aes(fill=typ), width=0.5) +
+xlab("Laender") +
+ylab("Relation") +
+ggtitle("Einhaltung der Maastricht Kriterien in 2005")
 
+plot_balken
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -441,7 +502,17 @@ h) Leider koennen wir die Laendernamen auf der x-Achse nicht besonders gut lesen
 #flipped_bars
 
 # enter your code here ...
-
+flipped_bars <- balken %>%
+filter(year==2005 | year == 2014) %>%
+ggplot(aes(x=country, y=relation)) + 
+geom_bar(stat="identity", aes(fill=typ), width=0.5) +
+xlab("Laender") +
+ylab("Relation") +
+ggtitle("Einhaltung der Maastricht Kriterien in 2005 und 2014") +
+facet_wrap( year~., ncol=2) +
+coord_flip()
+  
+  flipped_bars
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -471,9 +542,18 @@ Anschliessend koennen Sie durch `animated_bars + transition_time() ...` ihren Da
 #  coord_flip()
 
 # enter your code here ...
+animated_bars = balken %>%
+ ggplot(aes(x = country, y = relation)) +
+  geom_bar(stat = "identity", aes(fill=typ), width=0.5) +
+             xlab("Laender") +
+             ylab("Realtion") +
+             ggtitle("Einhaltung der Maastricht Kriterien in 2005 und 2014")+
+             scale_fill_manual(name = "Rel. Schuldenquote", 
+                              labels = c("Erfuellt Maastricht", "Verletzt Maastricht"),
+                              values = c("0" = "springgreen4", "1" = "red")) +
+coord_flip() 
+animated_bars + transition_time(as.integer(year))
 
-animated_bars + transition_time(as.integer(year)) +
-  labs(title = "Jahr: {frame_time}")
 ```
 Hier waere ein guter Zeitpunkt das Addin 'Check Problemset' auszufuehren!
 
@@ -519,6 +599,14 @@ colours = rev(brewer.pal(8,"RdYlGn"))
 #  theme(panel.grid.major = element_line(color = "white"))
 
 # enter your code here ...
+dat %>%
+ggplot() +
+geom_sf(aes(fill=debt_share, geometry=geometry)) +
+geom_sf_text(aes(label=label, geometry=geometry), size=3)+
+theme_void() + 
+scale_fill_gradientn(colours = colours, name = "Schuldenquote") +
+theme(panel.grid.major = element_line(color = "white"))
+
 
 ```
 Ganz interessant, dass viele osteuropaeischen EU-Laender auch im Verhaeltnis zu Ihrem BIP eine im Vergleich recht geringe Staatsverschuldung haben.
